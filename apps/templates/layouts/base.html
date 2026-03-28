@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="icon" href="{% static 'qu_icon.png' %}">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+
+    {% include "includes/header.html" %}
+
+    {% block content %}{% endblock %}
+
+    {% include "includes/footer.html" %}
+
+</body>
+</html>
